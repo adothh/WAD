@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/api/placeholder/32/32">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #f77062, #fe5196);
+        }
+        .desktop-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            min-height: 100vh;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            width: 300px;
+            background: linear-gradient(to bottom, #f77062, #fe5196);
+            color: white;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.2);
+            margin-bottom: 1rem;
+            border: 5px solid white;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 3rem;
+            overflow-y: auto;
+        }
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            transition: background 0.3s ease;
+        }
+        .social-links a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+        .info-table tr {
+            background: #f9f9f9;
+        }
+        .info-table td {
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        .section-title {
+            border-bottom: 2px solid #f77062;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop-container">
+        <div class="sidebar">
+            <picture>
+                <source srcset="https://raw.githubusercontent.com/adothh/WAD/main/Week%202/Photo.jpg">
+                <img src="https://raw.githubusercontent.com/adothh/WAD/main/Week%202/Photo.jpg" alt="Profile Picture" class="profile-pic">
+            </picture>
+            
+            <h1 style="color: white;">Ihsan Aditya Wicaksana</h1>
+            <h3 style="color: white; font-weight: 300;">102022330023 / FRI / Information System</h3>
+            
+            <div class="social-links">
+                <a href="https://github.com/adothh" target="_blank">GitHub</a>
+                <a href="https://www.instagram.com/adotthh/" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/ihsaditya" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <section>
+                <h2 class="section-title">About Me</h2>
+                <p>Studying Information Systems at Telkom University has led to my passion to create user-friendly and visually appealing interfaces in the UI/UX field.
+
+            <section>
+                <h2 class="section-title">Personal Information</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><time datetime="2005-08-17">August 17, 2005</time></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>ih3aditya@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td>South Tangerang, Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+62 858 1751 0075</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2 class="section-title">Academic Achievements</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Current Program</td>
+                        <td>Bachelor's Degree in Information System</td>
+                    </tr>
+                    <tr>
+                        <td>University</td>
+                        <td>Telkom University</td>
+                    </tr>
+                    <tr>
+                        <td>GPA</td>
+                        <td>3.77 / 4.00</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
